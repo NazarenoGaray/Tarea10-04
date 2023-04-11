@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,16 +7,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  pass : string = "1234";
-  password : string = "";
-  flag:boolean = false;
+  public user : string ='';
+  public password : string='';
+  public password2 : string='';
+
+
   public validar(){
-    if(this.pass==this.password){
-      alert("Logueado");
-      this.flag = true;
+    localStorage.getItem("user");
+    let user: Array<any> = <Array<any>>JSON.parse(localStorage.getItem("user")??"[]");
+    let i = user.findIndex(x=>x.nombre==this.user);
+    if(i<0){
+      return;
+    }
+    if(user[i].password==this.password){
+      this.router.navigateByUrl("Bienvenido");      
       
     }else{
       alert("Contraseña incorrecta");
     }
+  }
+
+  /**
+   *
+   */
+  constructor( public router : Router) {
+    
   }
 }

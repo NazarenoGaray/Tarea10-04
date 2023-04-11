@@ -1,14 +1,12 @@
 
-<div *ngIf="this.flag == false">
+<div >
 
-    <p>User:<input type="text" name="" id=""></p>
+    <p>User:<input type="text" [(ngModel)]="this.user"></p>
     <p>Pasword: <input type="password" [(ngModel)]="this.password" ></p>
 
-    <input type="button" value="Logging" (click)="validar()">
+    <input type="button" value="Login" (click)="validar()">
 
 </div>
 
-<div *ngIf="this.flag == true">
-    <app-not-found></app-not-found>
-</div>
+
 
