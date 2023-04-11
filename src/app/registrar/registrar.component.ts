@@ -15,6 +15,8 @@ export class RegistrarComponent {
     var users = [];
     users = JSON.parse(localStorage.getItem("user")??"[]");
     var user = {nombre : this.user, contraseña : this.password};
+    
+    users.push(user)
 
     if(this.password == this.password2){
         localStorage.setItem("user",JSON.stringify(users));
