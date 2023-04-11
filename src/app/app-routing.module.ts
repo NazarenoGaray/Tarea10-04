@@ -8,7 +8,7 @@ import { BienvenidosComponent } from './bienvenidos/bienvenidos.component';
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
   {path:'registrar',component:RegistrarComponent},
-  {path: 'bienvenido', component:BienvenidosComponent}
+  {path: 'bienvenido', component:BienvenidosComponent},
   {path:'**' ,component:NotFoundComponent}
 ];
 
