@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { RegistrarComponent } from './registrar/registrar.component';
+import { BienvenidosComponent } from './bienvenidos/bienvenidos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RegistrarComponent } from './registrar/registrar.component';
     NotFoundComponent,
     LoginComponent,
     MenuComponent,
-    RegistrarComponent
+    RegistrarComponent,
+    BienvenidosComponent
   ],
   imports: [
     BrowserModule,
