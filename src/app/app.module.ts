@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { BienvenidosComponent } from './bienvenidos/bienvenidos.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BienvenidosComponent } from './bienvenidos/bienvenidos.component';
     LoginComponent,
     MenuComponent,
     RegistrarComponent,
-    BienvenidosComponent
+    BienvenidosComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

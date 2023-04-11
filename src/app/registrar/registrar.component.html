@@ -4,7 +4,7 @@
     <p>Pasword: <input type="password" [(ngModel)]="this.password" ></p>
     <p>Repetir Pasword: <input type="password" [(ngModel)]="this.password2" ></p>
 
-    <input type="button" value="Login" [disabled] = "this.user == '' || this.password == '' || this.password2 == ''" (click)="Registrar()">
+    <input type="button" value="Registrar" [disabled] = "this.user == '' || this.password == '' || this.password2 == ''" (click)="Registrar()">
 
 </div>
 <!-- temas vistos: 
@@ -17,6 +17,8 @@
 
 
     agregar:
-al registrar: si existe el usuario y redirigir al login al registrar
-al logear: si el usuario es correcto, si la contraseña es correcto y al logear ir al bienvenido 
-agregar el bienvenido-->
+al registrar: que no exista el usuario, que coincidan las contraseñas y redirigir al login al registrar ok
+al logear: si el usuario es correcto, si la contraseña es correcto y al logear ir al bienvenido ok
+informar que la contraseña o usuario es incorrecto o no existe
+agregar el bienvenido ok
+-->

@@ -15,8 +15,9 @@ export class LoginComponent {
   public validar(){
     localStorage.getItem("user");
     let user: Array<any> = <Array<any>>JSON.parse(localStorage.getItem("user")??"[]");
-    let i = user.findIndex(x=>x.nombre==this.user);
+    let i = user.findIndex(x=>x.name==this.user);
     if(i<0){
+      alert("El Usuario no existe");
       return;
     }
     if(user[i].password==this.password){
