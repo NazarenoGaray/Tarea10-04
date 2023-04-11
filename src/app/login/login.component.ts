@@ -20,7 +20,7 @@ export class LoginComponent {
       return;
     }
     if(user[i].password==this.password){
-      this.router.navigateByUrl("Bienvenido");      
+      this.router.navigateByUrl("bienvenido");      
       
     }else{
       alert("Contraseña incorrecta");
