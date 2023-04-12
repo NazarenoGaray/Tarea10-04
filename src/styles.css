@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+.login{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 20rem;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 25%;
+}
+.bienvenido{
+    position: relative;
+    left: 22%;
+}
+.registrar{
+    background-color: white;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 20rem;
+    width: 20rem;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 25%;
+
+}
+.button{
+    position: relative;
+    left: 35%;
+}
+body{
+   background-image: url("./assets/image/fondobody.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+
+}
+ol{
+   color:black;
+   background-color: aliceblue;
+   width: 5rem; 
+}

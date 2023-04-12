@@ -1,10 +1,10 @@
 <!-- <div *ngIf="this.flag == false"> -->
-<div>
+<div class="registrar">
     <p>User:<input type="text"  [(ngModel)]="this.user"></p>
     <p>Pasword: <input type="password" [(ngModel)]="this.password" ></p>
     <p>Repetir Pasword: <input type="password" [(ngModel)]="this.password2" ></p>
 
-    <input type="button" value="Registrar" [disabled] = "this.user == '' || this.password == '' || this.password2 == ''" (click)="Registrar()">
+    <input type="button" class="button" value="Registrar" [disabled] = "this.user == '' || this.password == '' || this.password2 == ''" (click)="Registrar()">
 
 </div>
 <!-- temas vistos: 
