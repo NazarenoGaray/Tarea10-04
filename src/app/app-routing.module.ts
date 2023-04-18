@@ -11,8 +11,8 @@ const routes: Routes = [
   {path: 'bienvenido', component:BienvenidosComponent},
   {path:'login' ,component:LoginComponent} ,
   {path:'registrar',component:RegistrarComponent},
-  {path: 'listarUsuarios', component:UsuariosComponent},
-  {path: '', component:InicioComponent},
+  {path:'listarUsuarios', component:UsuariosComponent},
+  {path:'', component:InicioComponent},
   {path:'**' ,component:NotFoundComponent}
 ];
 

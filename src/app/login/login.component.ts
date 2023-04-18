@@ -27,7 +27,10 @@ export class LoginComponent {
       alert("Contraseña incorrecta");
     }
   }
-
+  public Cancelar(){
+    alert("Se cancelo el registro");
+    this.router.navigateByUrl("");
+  }
   /**
    *
    */

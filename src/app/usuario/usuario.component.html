@@ -3,7 +3,9 @@
     <img [src]="this.usuario.imagen" class="card-img-top" alt="...">
     <div class="card-body" >
       <h5 class="card-title">{{usuario.nombre}}</h5>
-      <p class="card-text">{{usuario.contrasena}}</p>
+      <label for="">Fecha Nacimiento:</label><p class="card-text">{{usuario.fechaNac}}</p>
+      <label for="">D.N.I:</label><p class="card-text">{{usuario.dni}}</p>
+      <label for="">Tipo Usuario:</label><p class="card-text">{{usuario.tipoUsuario}}</p>
       <input type="button" class="btn btn-primary" value="Eliminar" (click)="informarEliminar()">
 
     </div>

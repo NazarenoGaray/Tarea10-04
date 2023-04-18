@@ -14,7 +14,7 @@ export class RegistrarComponent {
   
   public Registrar(){
     var usuarios : Usuario[] = [];
-      usuarios = JSON.parse(localStorage.getItem("usuario")??"[]");
+    usuarios = JSON.parse(localStorage.getItem("usuario")??"[]");
       
     if(this.flag=true){
       localStorage.getItem("usuario");
@@ -36,7 +36,12 @@ export class RegistrarComponent {
     }
     this.flag=true;
   }
+  public Cancelar(){
+    alert("Se cancelo el registro");
+    this.router.navigateByUrl("");
+  }
   constructor( public router : Router) {
     
   }
+  
 }

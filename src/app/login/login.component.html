@@ -1,15 +1,14 @@
-
-<div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Usuario</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-        [(ngModel)]="this.usuario">
+<div class="container-fluid" id="content-login">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            [(ngModel)]="this.usuario">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="this.contrasena2">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2 col-3" [disabled]="this.usuario == '' || this.contrasena2 == ''"
+        (click)="validar()">Iniciar Sesion</button>
+    <button type="button" class="btn btn-danger mb-2 col-3" (click)="Cancelar()">Cancelar</button>
 </div>
-<div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="this.contrasena2">
-</div>
-<button type="submit" class="btn btn-primary" [disabled]="this.usuario == '' || this.contrasena2 == ''" (click)="validar()">Iniciar Sesion</button>
-
-
-
-
