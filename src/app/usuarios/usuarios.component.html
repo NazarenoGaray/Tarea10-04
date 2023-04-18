@@ -1,0 +1,8 @@
+<p>lista de usuarioooooos</p>
+
+<!-- <input type="button" value="Listar Usuarios" (click)="listarUsuarios()"> -->
+
+<div class="card" style="width: 18rem;" *ngFor = 'let usu of this.listaUsuarios'>
+
+    <app-usuario [adsadsasd]="usu" (eliminar)="quitar(usu)"></app-usuario>
+</div>

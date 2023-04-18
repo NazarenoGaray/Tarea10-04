@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CargarscriptsService } from "./../cargarscripts.service";
+
 
 @Component({
   selector: 'app-menu',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  /*constructor(private _Cargarscripts : CargarscriptsService){
+    _Cargarscripts.cargar(["nav.js"]);
+  }*/
+  
 }

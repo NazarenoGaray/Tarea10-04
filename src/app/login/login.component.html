@@ -1,12 +1,15 @@
 
-<div class="login">
-
-    <p>User: <input type="text" [(ngModel)]="this.user"></p>
-    <p>Pasword: <input type="password" [(ngModel)]="this.password" ></p>
-
-    <input type="button" class="button" value="Login" (click)="validar()">
-
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Usuario</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="this.usuario">
 </div>
+<div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="this.contrasena2">
+</div>
+<button type="submit" class="btn btn-primary" [disabled]="this.usuario == '' || this.contrasena2 == ''" (click)="validar()">Iniciar Sesion</button>
+
 
 
 
