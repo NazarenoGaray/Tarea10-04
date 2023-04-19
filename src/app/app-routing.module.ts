@@ -4,7 +4,7 @@ import { NotFoundComponent}from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { BienvenidosComponent } from './bienvenidos/bienvenidos.component';
-import { InicioComponent } from './inicio/inicio.component';
+import { InicioComponent } from './Components/inicio/inicio.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 
 const routes: Routes = [

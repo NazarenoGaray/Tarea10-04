@@ -1,0 +1,21 @@
+#content-registrar{
+    width: 50%;
+    background-color: rgba(197, 188, 176, 0.753);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.form-select{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial white;
+}
+
+.btnI{
+    padding: 0.5rem;
+    margin-left: 5rem;
+}
+.btnC{
+    padding: 0.5rem;
+    margin-right: 5rem;
+}
